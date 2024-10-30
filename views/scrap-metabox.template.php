@@ -1,0 +1,1 @@
+<a class="button" style="margin:5px 0;" href="<?php echo $action_url; ?>"><?php _e( '+ Create Panel', 'bing-boards' );?></a>

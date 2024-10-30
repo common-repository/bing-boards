@@ -1,0 +1,75 @@
+@import "compass/css3";
+
+#bing-boards-activated-notice {
+	color:#fff;
+	margin:30px 15px 0 0;
+	background:#505050 url('images/bing-logo.png') 18px 11px no-repeat;
+	border:1px solid #505050;
+	height:63px;
+	line-height:63px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	@include box-sizing(border-box);
+	p {
+		line-height:60px;
+		font-size:16px;
+		font-weight:500;
+		margin:0;
+		padding:0 0 0 130px;
+		float:left;
+	}
+	span {
+		float:right;
+		padding-right:20px;
+		.bing-btn {
+			font-size:13px;
+			font-weight:600;
+			padding:6px 12px;
+			color:#505050;
+			text-decoration:none;
+			&.bing-orange {
+				background-color: #fcd116;
+				&:hover {
+					background-color: #f0c610;
+				}
+			}
+			&.bing-grey {
+				margin-left:10px;
+				background-color: #d2d2d2;
+				&:hover {
+					background-color: #cccccc;
+				}
+			}
+		}
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media all and (max-width: 1000px){
+	#bing-boards-activated-notice {
+		height:auto;
+		line-height:25px;
+		padding-bottom:15px;
+		background-position:18px 32px;
+		p {
+			float:left;
+			margin-top:-5px;
+		}
+		span {
+			float:left;
+			padding:0 0 0 130px;
+		}
+	}
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	#bing-boards-activated-notice {
+		background-image:url('images/bing-logo@2x.png');
+		background-size:94px 36px;
+	}
+}
